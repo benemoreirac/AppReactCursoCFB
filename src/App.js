@@ -1,26 +1,20 @@
 import React from 'react'
-import Logo from './componentes/imgs/logo.png'
-import Eu from './componentes/imgs/homem.png'
-
+import './App.css'
 export default function App(){
-  const canal = ()=>{
-    return('CFB Crusos')
-  }
 
-  function curso(){
-    return 'Curso de React'
+  const textoDestaque={
+    color: '#00f',
+    fontSize: '3em'
   }
 
   return(
-    <section>
-      <header>
-        <p>{'Canal: ' + canal()}</p>
-        <p>{curso()}</p>
-      </header>
-      <section>
-        <img src="{Logo}"></img>
-        <img src="{Eu}"></img>
+    <>
+      <section className='caixa'>
+        <h1 style={{color: '#f00', fontSize: '5em'}}>CFB Cursos</h1>
+        <h2 style={textoDestaque}>Curso de React</h2>
+        <p className='texto'>Se inscreva em nosso canal e nos siga no instagram</p>
+        <a href='https://google.com.br' target='_blank'>CFB Cursos</a>
       </section>
-    </section>
+    </>
   )
 }
