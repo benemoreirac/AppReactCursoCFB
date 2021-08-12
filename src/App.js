@@ -1,20 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
+import Numero from './componentes/Numero'
+
 export default function App(){
 
-  const textoDestaque={
-    color: '#00f',
-    fontSize: '3em'
-  }
+  const [num,setNum] = useState(10)
 
   return(
     <>
-      <section className='caixa'>
-        <h1 style={{color: '#f00', fontSize: '5em'}}>CFB Cursos</h1>
-        <h2 style={textoDestaque}>Curso de React</h2>
-        <p className='texto'>Se inscreva em nosso canal e nos siga no instagram</p>
-        <a href='https://google.com.br' target='_blank'>CFB Cursos</a>
-      </section>
-    </>
+      <p>Valor do state num em App: {num}</p>
+      <Numero num={num} setNum={setNum}></Numero>
+    </> 
   )
 }
