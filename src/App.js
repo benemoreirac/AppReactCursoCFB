@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import RenderizaCor from './componentes/RenderizaCor'
+import Elementos from './componentes/elementosCar'
 
 export default function App(){
 
- 
   return(
     <>
-      <RenderizaCor/>
+    <Elementos></Elementos>
+
     </> 
   )
 }
