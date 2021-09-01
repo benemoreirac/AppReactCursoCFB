@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import ManipulaForm from './componentes/ManipulaForm'
+import ManipulaFormDois from './componentes/ManipulaFormDois'
 
 
 export default function App(){
 
   return(
     <>
-      <ManipulaForm/>
+      <ManipulaFormDois/>      
     </> 
   )
 }
