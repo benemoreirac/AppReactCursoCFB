@@ -1,13 +1,12 @@
 import React from 'react'
 import './App.css'
-import ManipulaFormDois from './componentes/ManipulaFormDois'
-
+import ElevaState from './componentes/ElevaState'
 
 export default function App(){
 
   return(
-    <>
-      <ManipulaFormDois/>      
+    <>  
+      <ElevaState/>
     </> 
   )
 }
